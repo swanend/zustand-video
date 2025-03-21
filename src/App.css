@@ -1,0 +1,107 @@
+/* App.css */
+
+/* Full width dark themed background with subtle texture */
+.full-width {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #f8c291, #6a89cc, #82ccdd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  /* Dark container with slight transparency and soft shadow */
+  .container {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    padding: 40px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  /* Heading styling for dark mode */
+  h1 {
+    color: #f1f1f1;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Centered counter section */
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    span{
+        width: 40px;
+        font-weight: 600;
+        font-size: 24px;
+      }
+  }
+  
+  /* Button common styles */
+  .btn {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    background-color: #3a7bd5;
+    color: #fff;
+
+  }
+  
+  /* Hover and active effects for counter buttons */
+  .btn:hover {
+    background-color: #2a5ea8;
+    transform: scale(1.05);
+  }
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Reset button styling */
+  .reset {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #b71c1c;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .reset:hover {
+    background-color: #a51b1b;
+    transform: scale(1.02);
+  }
+  .reset:active {
+    transform: scale(0.98);
+  }
+  
+  /* Responsive typography and spacing */
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px 20px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    .btn {
+      width: 50px;
+      height: 50px;
+      font-size: 28px;
+    }
+    .reset {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
